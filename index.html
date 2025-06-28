@@ -3,48 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday, Modeline 💛</title>
+  <title>For My Love, Modeline 💖</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="hero">
-    <h1>Happy Birthday, Modeline 🎂</h1>
-    <p>Made with love, just for you.</p>
-    <button onclick="scrollToSection('letter')">Begin</button>
+  <section class="login-container" id="login-section">
+    <h1>🔐 Our Special Memories</h1>
+    <p>Enter the password to unlock our memories</p>
+    <input type="password" id="passwordInput" placeholder="Enter password" />
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="loginError" class="error-msg"></p>
   </section>
 
-  <section id="letter" class="section">
-    <h2>My Letter for you 💌</h2>
-    <p id="typed-letter"></p>
+  <section id="letter-section" style="display: none;">
+    <h2>💌 A Letter For You</h2>
+    <pre id="typed-letter" class="letter-output"></pre>
   </section>
 
-  <section class="section">
-    <h2>Reasons I Love You 💛</h2>
-    <ul class="reasons">
-      <li>Your smile lights up my world.</li>
-      <li>You make me want to be better.</li>
-      <li>You're thoughtful, kind, and incredibly strong.</li>
-      <li>Your words of encouragement, always cheering me on.</li>
-      <li>You're my peace, when I'm with you, my day becomes instantly better</li>
-      <!-- Add more -->
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Gallery 📸</h2>
+  <section id="gallery-section" style="display: none;">
+    <h2>📸 Our Moments</h2>
     <div class="gallery">
-      <!-- Use <img src="assets/yourphoto.jpg" /> -->
+      <img src="assets/moment1.jpg" alt="Moment 1" />
+      <img src="assets/moment2.jpg" alt="Moment 2" />
+    </div>
+
+    <h2>🌍 Places We've Been</h2>
+    <div class="gallery">
+      <img src="assets/place1.jpg" alt="Place 1" />
+      <img src="assets/place2.jpg" alt="Place 2" />
+    </div>
+
+    <h2>🎥 Our Video</h2>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="assets/myvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   </section>
-
-  <section class="section">
-    <h2>Our Playlist 🎶</h2>
-    <iframe src="YOUR_SPOTIFY_LINK_HERE" width="300" height="380" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-  </section>
-
-  <footer>
-    <p>With all my love, always — [Your Name]</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
