@@ -1,42 +1,89 @@
 body {
-  font-family: 'Georgia', serif;
-  background: #fff9f5;
-  color: #3e2f2f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff0f5;
+  color: #333;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  text-align: center;
 }
 
-.hero {
-  background: linear-gradient(to bottom, #ffe6e6, #fff);
-  padding: 100px 20px;
-  text-align: center;
+h1, h2 {
+  color: #d63384;
+  margin-top: 20px;
+}
+
+.login-container {
+  padding: 80px 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 250px;
+  margin-top: 10px;
+  border: 2px solid #d63384;
+  border-radius: 5px;
 }
 
 button {
-  background: #f06292;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #d63384;
   color: white;
   border: none;
-  padding: 12px 25px;
-  font-size: 18px;
-  border-radius: 25px;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 button:hover {
-  background: #ec407a;
+  background-color: #b82a6b;
 }
 
-.section {
-  padding: 60px 20px;
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
 }
 
 .gallery img {
-  width: 100px;
-  margin: 5px;
+  max-width: 300px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.video-wrapper {
+  margin: 30px auto;
+  padding: 10px;
+}
+
+video {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.letter-output {
+  white-space: pre-wrap;
+  text-align: left;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff8f0;
+  border: 1px solid #d63384;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
