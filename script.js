@@ -29,3 +29,20 @@ window.onload = typeWriter;
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
+
+// 🔐 Password-Protected Gallery Logic
+function checkPassword() {
+  const password = document.getElementById("passwordInput").value;
+  const correctPassword = "modeline"; // Change this if needed
+
+  const gallery = document.getElementById("gallery-section");
+  const login = document.getElementById("login-section");
+  const errorMsg = document.getElementById("loginError");
+
+  if (password === correctPassword) {
+    gallery.style.display = "block";
+    login.style.display = "none";
+  } else {
+    errorMsg.textContent = "Incorrect password! Try again 💔";
+  }
+}
